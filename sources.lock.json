@@ -1,0 +1,219 @@
+{
+  "repo": "BluetomatoBo/tortoise-wow",
+  "branch": "1181-zhcn-localization",
+  "syncs": [
+    {
+      "prefix": "2026111301",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "date": "2026-11-13",
+      "migrations": [
+        "2026111301_01_locales_item.sql",
+        "2026111301_02_locales_spell.sql",
+        "2026111301_03_locales_creature.sql",
+        "2026111301_04_locales_gameobject.sql",
+        "2026111301_05_locales_page_text.sql",
+        "2026111301_06_locales_points_of_interest.sql",
+        "2026111301_07_locales_broadcast_text.sql",
+        "2026111301_08_locales_quest.sql",
+        "2026111301_09_locales_quest_details.sql",
+        "2026111301_10_locales_quest_objectives.sql",
+        "2026111301_11_locales_quest_rewards.sql",
+        "2026111301_12_locales_quest_extra.sql",
+        "2026111301_13_locales_quest_fixes.sql",
+        "2026111301_14_locales_quest_proper_nouns.sql",
+        "2026111301_15_locales_quest_live_text.sql",
+        "2026111301_16_locales_quest_new_content.sql",
+        "2026111301_17_locales_quest_new_content_mt.sql",
+        "2026111301_18_locales_new_entities.sql",
+        "2026111301_19_broadcast_text.sql",
+        "2026111301_20_npc_text.sql",
+        "2026111301_21_gossip_menu.sql",
+        "2026111301_22_creature_template.sql",
+        "2026111301_23_quest_greeting.sql",
+        "2026111301_24_npc_trainer_greeting.sql",
+        "2026111301_25_script_texts.sql",
+        "2026111301_26_chat_channels.sql",
+        "2026111301_27_mangos_string.sql",
+        "2026111301_28_pet_name_generation.sql",
+        "2026111301_29_locales_dbc_official.sql",
+        "2026111301_30_locales_official_wowhead.sql",
+        "2026111301_31_locales_name_fixes.sql",
+        "2026111301_32_locales_item_desc_fixes.sql",
+        "2026111301_33_locales_quest_missing_text.sql",
+        "2026111301_34_locales_simplified_cleanup.sql"
+      ]
+    }
+  ],
+  "files": {
+    "locales_item.sql": {
+      "blob": "4c9a0792ffcb4b92843959c08630897953eedb66",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_01_locales_item.sql"
+    },
+    "locales_spell.sql": {
+      "blob": "97ab6eda633677f5998d01008a8595e499d312fb",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_02_locales_spell.sql"
+    },
+    "locales_creature.sql": {
+      "blob": "0a836c9c33901edf2bd9f40282df1fa6a03b9daa",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_03_locales_creature.sql"
+    },
+    "locales_gameobject.sql": {
+      "blob": "9d6269a9c19c2e2c801ee099d2cd135c8f4248f0",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_04_locales_gameobject.sql"
+    },
+    "locales_page_text.sql": {
+      "blob": "69c6d8180bbdf2bb3be9320b04c509867e99963e",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_05_locales_page_text.sql"
+    },
+    "locales_points_of_interest.sql": {
+      "blob": "d67c587a13617250e8c7d7fc8c74a5eba0d80504",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_06_locales_points_of_interest.sql"
+    },
+    "locales_broadcast_text.sql": {
+      "blob": "4c56be038dfd1f2e65f9bb814f49950f2bec5d4c",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_07_locales_broadcast_text.sql"
+    },
+    "locales_quest.sql": {
+      "blob": "0905532b49760aa9dbcbd06ca4dce8dacd01e5b5",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_08_locales_quest.sql"
+    },
+    "locales_quest_details.sql": {
+      "blob": "18bbbd533c16446634dcac8663e566bdbbeeb292",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_09_locales_quest_details.sql"
+    },
+    "locales_quest_objectives.sql": {
+      "blob": "0a6ff1dc88d1a3ada53b7d9edc573031516816e9",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_10_locales_quest_objectives.sql"
+    },
+    "locales_quest_rewards.sql": {
+      "blob": "bd336dc56b0cb8b6bbb5ccd45ef7d7e4d2018394",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_11_locales_quest_rewards.sql"
+    },
+    "locales_quest_extra.sql": {
+      "blob": "be23818cee2a799f05306a0705dc95c56e8b9de0",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_12_locales_quest_extra.sql"
+    },
+    "locales_quest_fixes.sql": {
+      "blob": "6fc3d91a8ef17ff6cef7a8c34ef0ad01fee296fa",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_13_locales_quest_fixes.sql"
+    },
+    "locales_quest_proper_nouns.sql": {
+      "blob": "2b5b24558c6ec57981cec3ef785d81c221b3b1ce",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_14_locales_quest_proper_nouns.sql"
+    },
+    "locales_quest_live_text.sql": {
+      "blob": "a1cb7eb8d1125ad1d2df0fccc8363941706858f2",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_15_locales_quest_live_text.sql"
+    },
+    "locales_quest_new_content.sql": {
+      "blob": "cfaf4279385d0ba36ffcfa541067acf34b05ad0f",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_16_locales_quest_new_content.sql"
+    },
+    "locales_quest_new_content_mt.sql": {
+      "blob": "7877c77dff22f2b4952cd6a08dd111ce8ef181fe",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_17_locales_quest_new_content_mt.sql"
+    },
+    "locales_new_entities.sql": {
+      "blob": "52ec4cef2293962c0d99a578435ecc31085f859c",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_18_locales_new_entities.sql"
+    },
+    "broadcast_text.sql": {
+      "blob": "d0c0d190bab0b87582524ed8b1c21ea36547d300",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_19_broadcast_text.sql"
+    },
+    "npc_text.sql": {
+      "blob": "5394364517181908c45308aa3a7581fb5743e106",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_20_npc_text.sql"
+    },
+    "gossip_menu.sql": {
+      "blob": "51f9bfa9eb153be0521165566f61650e4aa0edbb",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_21_gossip_menu.sql"
+    },
+    "creature_template.sql": {
+      "blob": "f12a8fc2a5c2e7a134e0ae372e1b0532c938e6ee",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_22_creature_template.sql"
+    },
+    "quest_greeting.sql": {
+      "blob": "8d678459ac544335907e7ac67817cf6889096da3",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_23_quest_greeting.sql"
+    },
+    "npc_trainer_greeting.sql": {
+      "blob": "fcc74cbb16a5393196cdc0b4721050fa541683c9",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_24_npc_trainer_greeting.sql"
+    },
+    "script_texts.sql": {
+      "blob": "3db620bea4d0c728c647ba322cfe57aa41a761b7",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_25_script_texts.sql"
+    },
+    "chat_channels.sql": {
+      "blob": "361baacbc406b764777de1ccdefa2755b2e3e836",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_26_chat_channels.sql"
+    },
+    "mangos_string.sql": {
+      "blob": "aec051523fcc54192bff0d0c89a7b45ca76de6d3",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_27_mangos_string.sql"
+    },
+    "pet_name_generation.sql": {
+      "blob": "0bfdbc77e4f5ddace7646c8e1ed1ecb9b7a505b4",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_28_pet_name_generation.sql"
+    },
+    "locales_dbc_official.sql": {
+      "blob": "9247ea8ab5e02cfbc3a5c4adedbafc8d1740be23",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_29_locales_dbc_official.sql"
+    },
+    "locales_official_wowhead.sql": {
+      "blob": "76485f73242c8a6ff4dadd30acf34da152df08b2",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_30_locales_official_wowhead.sql"
+    },
+    "locales_name_fixes.sql": {
+      "blob": "93f8a346abb1e914784c6de84636b30fca04946e",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_31_locales_name_fixes.sql"
+    },
+    "locales_item_desc_fixes.sql": {
+      "blob": "af662af306323cbffdab2141ed1b543c811205a9",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_32_locales_item_desc_fixes.sql"
+    },
+    "locales_quest_missing_text.sql": {
+      "blob": "3a60e2b241dd0f5b7e2c975dc23eeaa53959bb0b",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_33_locales_quest_missing_text.sql"
+    },
+    "locales_simplified_cleanup.sql": {
+      "blob": "02732e23834af7d15c5a63d5471be1493efd3674",
+      "commit": "95dac49bee20a6744a34c9deac38146cd5c9e854",
+      "migration": "2026111301_34_locales_simplified_cleanup.sql"
+    }
+  }
+}
