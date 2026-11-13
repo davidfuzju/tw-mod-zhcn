@@ -5,6 +5,7 @@
     tools/sync.py                 # 比对：列出上游与 sources.lock.json 不同的文件，不写
     tools/sync.py apply           # 写入：生成新迁移、更新 sources.lock.json 与 SOURCES.md
     tools/sync.py apply --ref <commit>   # 指定上游提交（默认分支最新）
+    tools/sync.py verify          # 不联网：用 mangosd 的切分规则回读 data/sql/world/ 里每个迁移（CI 跑这个）
 
 为什么要转换，而不是原样拷贝：mangosd 的迁移执行器（AutoUpdater::ExecuteUpdate）
 自己切分语句，规则与 MySQL 不同：
@@ -337,9 +338,22 @@ def next_prefix(lock):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("mode", nargs="?", default="check", choices=["check", "apply"])
+    ap.add_argument("mode", nargs="?", default="check", choices=["check", "apply", "verify"])
     ap.add_argument("--ref", default=BRANCH)
     a = ap.parse_args()
+
+    if a.mode == "verify":
+        bad = 0
+        for name in sorted(os.listdir(OUT_DIR)):
+            text = open(os.path.join(OUT_DIR, name), encoding="utf-8").read()
+            lines = [l for l in text.split("\n") if l and not l.startswith("--")]
+            try:
+                verify(text, lines)
+            except ValueError as e:
+                print(f"✗ {name}: {e}")
+                bad += 1
+        print(f"{'✗' if bad else '✓'} {len(os.listdir(OUT_DIR))} 个迁移，{bad} 个与 mangosd 切分不符")
+        sys.exit(1 if bad else 0)
 
     commit = resolve_ref(a.ref)
     upstream = list_files(commit)
